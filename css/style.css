@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #000000fc;
+    color: white;
+    
+}
+
+/*fuente del titulo de la pagina*/
+.name-pagina{
+    font-family: "Londrina Sketch", sans-serif; 
+    font-size: 40px;      
+}
+
+
+
+.header_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    
+}
+
+
+.logo-pagina{
+    width: 120px;
+    height: 120px;
+}
+/*estilo de listas*/
+ul{
+    list-style-type: none;
+    
+}
+li{
+    
+    display: inline-block;
+    
+    
+    
+}
+a:hover{
+    padding: 10px;
+    border-radius: 20px;
+    color: black;
+    background-color: white;
+   
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.section-principal{
+    position: relative;
+    width:100vw;
+    height: 65vh;
+    margin: 0 auto;
+    margin-bottom: 0px;
+}
+/*estilo de imagen de pagina principal*/
+
+.img-princ{
+    width:100vw;
+    height: 65vh;
+    
+    
+}
+/*estilos para el texto dentro de la imagen en la pagina principal*/
+.text-img{
+    font-family: "Dancing Script", cursive;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    color: white;
+    background-color: #00000049;
+    width: 60%;
+    font-size: 25px;
+}
+.vinculo_img{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    color: white;
+    background-color: #00000049;
+    font-family: "Dancing Script", cursive;
+
+
+}
+.section_box{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    
+    
+    
+}
+section{
+    font-family: "Crimson Text", serif;
+    font-size: 20px;
+}
+
+p{
+    line-height: 1.5;
+    padding: 20px;
+}
+h2{
+    text-align: center;
+}
+
+
+/*edicion de las cajas de la pagina principal*/
+.box1{
+    background-color: #292323;
+    color: white;
+    width: 400px;
+    text-align: center;
+    font-size: 15px;
+}
+.box2{
+    background-color: #292323;
+    color: white;
+    width: 400px;
+    text-align: center;
+    font-size: 15px;
+}
+.div-logos{
+    display: flex;
+    justify-content: space-around;
+}
+.div-text{
+    display: flex;
+    
+    
+}
+.section_productos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+.div_productos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.text_productos{
+    width: 35%;
+    align-items: center;
+    line-height: 2rem;
+
+}
+/*edicion de las imagenes de ventas*/
+.productos{
+    width: 50%;
+    height: 480px;   
+    padding: 20px; 
+}
+/*estilo boton submit*/
+.submit{
+    
+    color: white;   
+    border: none;
+    background-color: #39b139;
+    border-radius: 20px;
+    padding: 10px;
+       
+}
+.submit:hover {
+    background-color: #045d04;
+    color: white;
+}
+h2{
+   
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.h2-background:hover{
+    background-color: black;
+    color: white;
+    font-size: 40px;
+}
+.content-contacto{
+    display: flex;
+           
+}
+/*Estilo formulario*/
+label{
+    padding: 10px;
+    margin: 5px;
+}
+input{
+    border-radius: 10px;
+}
+    
+textarea{
+    font-family: inherit;
+    font-size: 100%;   
+
+}
+
+footer{
+    background-color:#000000fc;
+    color: white;
+    display: flex;
+    justify-content: center;    
+}
