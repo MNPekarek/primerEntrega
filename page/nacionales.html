@@ -3,63 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/style22.css">
     <title>KnowTheWorld</title>
 </head>
-<body>
-    <header>
-        <nav class="header_nav">
-            <img class="logo-pagina" src="../img/logo.png" alt="logo pagina">
-        <h1 class="name-pagina">Know The World</h1>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#">Nacionales</a></li>
-                <li><a href="./internacionales.html">Internacionales</a></li>
-                <li><a href="./consejos.html">Consejos</a></li>
-                <li><a href="./contactanos.html">Contactanos</a></li>
-            </ul>
-        </nav> 
+<body class="container">    
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fondo__modificado">
+            <div class="container-fluid">
+                <img class="logo-pagina" src="../img/logo.png" alt="logo de pagina know the world">
+                <h1 class="name-pagina">Know The World</h1>
+              <a class="navbar-brand colores" href="../index.html">Inicio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link  colores" aria-current="page" href="#">Nacionales</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link colores" href="./internacionales.html">Internacionales</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link colores" href="./consejos.html">Consejos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link colores" href="./contactanos.html">Contactanos</a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </nav>        
     </header>
-    <main>
+    <main class="main">
         <section>
             <h2>Conociendo el país</h2>
-            <p>El pasear por tu país te ayudará a enterarte de las cosas buenas que tu tierra tiene que ofrecerle al turista. Asimismo, verás con otros ojos las bellezas de tu país al explorarlas en primera persona, lo que te hará ser un individuo más agradecido por todo lo que tienes a tu alcance.</p>
+            <p>El pasear por tu país te ayudará a enterarte de las cosas buenas que tu tierra tiene que ofrecerle al turista. Asimismo, verás con otros ojos las bellezas de tu país al explorarlas en primera persona, lo que te hará ser un individuo más agradecido por todo lo que tienes a tu alcance. Ya sea que busques aventura, relajación o cultura, un viaje nacional es la opción perfecta para conectar con tus raíces y explorar lo que a veces pasa desapercibido.</p>
         </section> 
 
-        <section class="section_productos">
-            <div class="div_productos">
-                <img class="productos" src="../img/cerro-siete-colores.jpg" alt="img-cerro-siete-colores">
-            <p class="text_productos">El Cerro de los 7 colores es uno de los centros de turismo más importantes de Jujuy, y uno de los más concurridos en todo el país.La característica principal de este hermoso lugar se centra en los siete colores que pueden ser vistos al ver al costado del cerro, los cuales se generan por los diferentes minerales que se encuentran en la tierra.</p>
-            <button class="submit" type="submit">Comprar</button>
-            </div>
-            <div class="div_productos">
-                <img class="productos" src="../img/iguaz_c3_ba_waterfalls.jpg" alt="img-cataratas-del-iguazu">
-            <p class="text_productos">El Parque Nacional Iguazú es un paraíso para los amantes de la observación de aves, con más de 400 especies registradas. Así, entre ellos destacan la imponente águila arpía y el vibrante tucán, que añaden colores y vida a los cielos y bosques del parque.Su exuberante selva abunda en lianas, epífitas y helechos. Y obviamente su mayor atractivo, más de 2 km de cascadas que superan los 70 metros de altura, una manifestación espectacular de uno de los recursos cada vez más escasos del planeta: el agua.</p>
-            <button class="submit" type="submit">Comprar</button>
-            </div>
-            <div class="div_productos">
-                <img class="productos" src="../img/perito_moreno_glacier_cala.jpg" alt="img-glaciar-perito-moreno">
-            <p class="text_productos">El Perito Moreno es uno de los glaciares más importantes que se desprenden del Campo de Hielo Patagónico Sur, ubicado en la cordillera sur de los Andes (Argentina y Chile) . Este campo de hielo es el último remanente de las mayores expansiones glaciares ocurridas desde finales del Mioceno hasta finales del Pleistoceno.</p>
-            <button class="submit" type="submit">Comprar</button>
-            </div>
-            <div class="div_productos">
-                <img class="productos" src="../img/Salinas_Grandes.jpg" alt="img-salinas-grandes">
-            <p class="text_productos"p>En un viaje por esta parte del país, visitar las Salinas Grandes es una de las excursiones que encabezan todo itinerario. Su singular belleza y su fácil acceso hacen que sea uno de los favoritos de los turistas.</p>
-            <button class="submit" type="submit">Comprar</button>
+        <section class="section__productos">
 
-            </div>           
+                <div class="div_productos"> 
+                    <div class="img__productos1">
+                        <img class="productos" src="../img/cerro-siete-colores.jpg" alt="img paisaje cerro de los siete colores en Jujuy">
+                    </div>                                        
+                </div>
+                <div class="texto__button1">
+                    <p class="text__productos">El Cerro de los 7 colores es uno de los centros de turismo más importantes de Jujuy, y uno de los más concurridos en todo el país. La característica principal de este hermoso lugar se centra en los siete colores que pueden ser vistos al ver al costado del cerro, los cuales se generan por los diferentes minerales que se encuentran en la tierra.</p>
+                    <button class="submit" type="submit">Comprar</button>
+                 </div> 
+
+
+                <div class="div_productos">  
+                    <div class="img__productos2">
+                        <img class="productos" src="../img/iguaz_c3_ba_waterfalls.jpg" alt="img paisaje de las cataratas del iguazu en Misiones">
+                    </div>                                    
+                </div>
+                <div class="texto__button2">
+                    <p class="text__productos">El Parque Nacional Iguazú es un paraíso para los amantes de la observación de aves, con más de 400 especies registradas. Así, entre ellos destacan la imponente águila arpía y el vibrante tucán, que añaden colores y vida a los cielos y bosques del parque. Su exuberante selva abunda en lianas, epífitas y helechos. Y obviamente su mayor atractivo, más de 2 km de cascadas que superan los 70 metros de altura, una manifestación espectacular de uno de los recursos cada vez más escasos del planeta: el agua.</p>
+                    <button class="submit" type="submit">Comprar</button>
+                </div>
+
+
+                <div class="div_productos">   
+                    <div class="img__productos3">
+                        <img class="productos" src="../img/perito_moreno_glacier_cala.jpg" alt="img paisaje  del glaciar perito moreno en sur de Argentina">
+                    </div>                 
+                </div>  
+                <div class="texto__button3">
+                    <p class="text__productos">El Perito Moreno es uno de los glaciares más importantes que se desprenden del Campo de Hielo Patagónico Sur, ubicado en la cordillera sur de los Andes (Argentina y Chile). Este campo de hielo es el último remanente de las mayores expansiones glaciares ocurridas desde finales del Mioceno hasta finales del Pleistoceno.</p>
+                <button class="submit" type="submit">Comprar</button>
+                </div>    
+                
+                <div class="div_productos">
+                    <div class="img__productos4">
+                        <img class="productos" src="../img/Salinas_Grandes.jpg" alt="img paisaje de las salinas grandes en el norte">
+                    </div>      
+                </div>
+                <div class="texto__button4"> 
+                    <p class="text__productos"p>En un viaje por esta parte del país, visitar las Salinas Grandes es una de las excursiones que encabezan todo itinerario. Su singular belleza y su fácil acceso hacen que sea uno de los favoritos de los turistas.</p>
+            <button class="submit" type="submit">Comprar</button>
+                </div>     
+            </div>
+           
             
             
-        </section>      
+        </section>   
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
         
     </main>
-    <footer>      
+    <footer class="footer">      
         <img src="../img/icons8-instagram-48.png" alt="logo instagram">
         <p>Knowtheworld</p>
         <img src="../img/icons8-facebook-nuevo-48.png" alt="logo facebook">
