@@ -76,6 +76,7 @@ $colorSecundario: black;
             @include mixin.minitablet{
                 min-height: 50vh;
             }
+
             @include mixin.movil{
                 min-height: 50vh;  
                 border-radius: 0;                            
@@ -148,7 +149,7 @@ $colorSecundario: black;
                         }
                     }
                 }
-                p{}
+                p{@include mixin.textoP();}
             }
             .box2{
                 @extend .box1;
