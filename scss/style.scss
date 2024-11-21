@@ -73,6 +73,9 @@ $colorSecundario: black;
             @include mixin.tablet{
                 height: auto;                
             }   
+            @include mixin.minitablet{
+                min-height: 50vh;
+            }
             @include mixin.movil{
                 min-height: 50vh;  
                 border-radius: 0;                            
@@ -93,6 +96,9 @@ $colorSecundario: black;
                         width: 55%;
                         font-size: 2rem;                    
                     } 
+                    @include mixin.minitablet{
+                        font-size: 1.3rem;
+                    }
                     @include mixin.movil(){
                         font-size: 1.3rem;
                         width: 80%;
@@ -119,6 +125,9 @@ $colorSecundario: black;
         .section__box{
             @include mixin.flex(space-around , flex-start );
             padding: 5px;
+            @include mixin.minitablet{
+                flex-direction: column;
+            }
             @include mixin.movil(){
                 flex-direction: column;
             }
@@ -154,6 +163,9 @@ $colorSecundario: black;
                 @include mixin.flex(center, flex-start);
                 text-align: center;
                 @include mixin.tablet{
+                    flex-direction: column;
+                }
+                @include mixin.minitablet{
                     flex-direction: column;
                 }
                 @include mixin.movil{
