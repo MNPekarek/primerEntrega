@@ -1,0 +1,54 @@
+@use "mixin";
+
+$colorPrincipal: #c0c0c0;
+$colorSecundario: black;
+
+
+.footer{
+    grid-area: footer;
+    @include mixin.flex(center, center );
+    background-color: $colorSecundario;
+    color: white; 
+    border-radius: 20px; 
+    
+    padding: 5px; 
+    border: 1px solid #ccc;  
+    @include mixin.tablet{
+        width: 100vw; 
+    } 
+    @include mixin.movil{
+        flex-direction: column;
+    }
+    .div__img__logo__footer1{
+        .logo1{
+            padding: 10px;
+            @include mixin.hover-scale();
+        }
+    }
+    .div__texto_footer1{
+        
+        p{padding-top: 20px;        }
+    }
+    .div__img__logo__footer2{
+        .logo2{
+            padding: 10px;
+            @include mixin.hover-scale();
+        }
+    }
+    .div__texto_footer2{
+        p{
+            padding-top: 20px;
+        }
+    } 
+    .div__img__logo__footer3{
+        .logo3{
+            padding: 10px;
+            @include mixin.hover-scale();
+        }
+    }
+    .div__texto_footer3{
+        p{
+            padding-top: 20px;
+        }
+    }        
+}

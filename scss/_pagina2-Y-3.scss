@@ -1,0 +1,124 @@
+@use "mixin";
+
+$colorPrincipal: #c0c0c0;
+$colorSecundario: black;
+
+
+
+.section__productos__titulo{    
+    h2{
+        @include mixin.titulos();
+    }
+    p{   
+       @include mixin.textoP();        
+    }
+}
+
+.section__productos{ 
+    @include mixin.grid(1fr 1fr , 1fr 1fr 1fr 1fr );
+    grid-template-areas: 
+    "img__productos1 texto__button1"
+    "texto__button2 img__productos2"
+    "img__productos3 texto__button3"
+    "texto__button4 img__productos4"
+    ;
+    @include mixin.movil{
+        @include mixin.grid(1fr , 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr);
+        grid-template-areas:
+        "img__productos1"
+        "texto__button1"
+        "img__productos2"
+        "texto__button2"
+        "img__productos3"
+        "texto__button3"
+        "img__productos4"
+        "texto__button4"
+        ;
+    }
+    .div__productos1{
+        .img__productos1{
+            grid-area: img__productos1;
+            .productos1{
+                @include mixin.productos();
+            }
+        }
+    }
+    .texto__button1{
+        grid-area: texto__button1;
+        @include mixin.textoButton();
+        @include mixin.flex(center, center );
+        flex-direction: column;
+        .text__productos1{ 
+            @include mixin.textoProductos();
+        }
+        .submit1{
+            @include mixin.submit;  
+            @include mixin.pulse();          
+        }
+    }
+    .div__productos2{
+        .img__productos2{
+            grid-area: img__productos2;
+            .productos2{
+                @include mixin.productos();
+            }
+        }
+    }
+    .texto__button2{
+        grid-area: texto__button2;
+        @include mixin.textoButton();
+        @include mixin.flex(center, center );
+        flex-direction: column;
+        .text__productos2{
+            @include mixin.textoProductos();
+        }
+
+        .submit2{
+            @include mixin.submit;  
+            @include mixin.pulse();          
+        }
+        
+    }    
+    .div__productos3{
+        .img__productos3{
+            grid-area: img__productos3;
+            .productos3{
+                @include mixin.productos();
+            }
+        }
+    }
+    .texto__button3{
+        grid-area: texto__button3;
+        @include mixin.textoButton();
+        @include mixin.flex(center, center );
+        flex-direction: column;
+        .text__productos3{
+            @include mixin.textoProductos();
+        }
+        .submit3{
+            @include mixin.submit;    
+            @include mixin.pulse();        
+        }
+    }
+    .div__productos4{
+        .img__productos4{
+            grid-area: img__productos4;
+            .productos4{
+                @include mixin.productos();
+            }
+        }
+    }
+    .texto__button4{
+        grid-area: texto__button4;
+        @include mixin.textoButton();
+        @include mixin.flex(center, center );
+        flex-direction: column;
+        .text__productos4{ 
+            @include mixin.textoProductos();}
+        .submit4{
+            @include mixin.submit;
+            @include mixin.pulse();            
+        }
+    }
+}
+

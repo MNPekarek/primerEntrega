@@ -1,0 +1,107 @@
+$colorPrincipal: #c0c0c0;
+$colorSecundario: black;
+
+@mixin flex($justify: flex-start, $align: stretch) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    
+}
+
+@mixin grid($columns , $filas ){
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $filas;
+    
+}
+
+@mixin titulos{
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px;
+    margin: 10px;
+    color: #333333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@mixin textoP{
+    padding: 10px 30px;
+    line-height: 2rem;
+}
+
+@mixin textoButton{
+    line-height: 2rem;    
+    height: 480px;          
+}
+@mixin textoProductos{
+    padding: 20px;
+    width: 80%;
+}
+
+@mixin productos{
+    width: 100%;
+    height: 480px;   
+    padding: 20px;
+}
+@mixin submit{
+    color: white;   
+    border: none;
+    background-color: #39b139;
+    border-radius: 20px;
+    padding: 10px;
+}
+@mixin colores{
+    color: $colorPrincipal;
+    text-decoration: none;
+}
+
+@mixin coloresHover{
+    padding: 5px;
+    border-radius: 20px;
+    color: $colorSecundario;
+    background-color: $colorPrincipal;
+}
+
+@mixin fadeIn($duracion : 1s, $distancia: 20px){
+    opacity: 0;
+    transform: translateY($distancia);
+    animation: fadeIn $duracion forwards;
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+@mixin hover-scale($scale: 1.1, $duracion: 0.3s) {
+    transition: transform $duracion ease-in-out;
+    &:hover {
+      transform: scale($scale);
+    }
+  }
+
+  @mixin pulse($duracion: 1.5s) {
+    animation: pulse $duracion infinite;
+  
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+@mixin tablet(){
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+        @content;        
+    }
+}
+@mixin movil(){
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+    
+}

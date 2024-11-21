@@ -1,0 +1,50 @@
+@use "mixin";
+
+$colorPrincipal: #c0c0c0;
+$colorSecundario: black;
+
+
+.section__contactanos{
+    h2{@include mixin.titulos();}
+    p{@include mixin.textoP();}
+}
+
+.section__contacto{
+    .h2-background{@include mixin.titulos();}
+    .content-contacto{       
+        .contacto{
+            display: flex;            
+            padding: 10px;
+            @include mixin.movil{
+                justify-content: center;
+            }
+            p{
+                padding-top: 10px;
+                padding-left: 10px;
+            }
+        }
+        }      
+}
+
+.section__texto{
+    p{@include mixin.textoP();}
+}
+
+.section__formulario{
+    h2{@include mixin.titulos();}
+    .formulario{
+        div{
+            .colorCheck{
+                &:checked{
+                    background-color: #39b139; 
+                    border-color: green;              
+                }
+            }
+        }
+        
+        .submit{
+            @include mixin.submit;
+        }        
+    }
+}
+    
