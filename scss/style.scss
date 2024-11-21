@@ -32,6 +32,11 @@ $colorSecundario: black;
         margin: 0;
         padding: 0; 
     } 
+    @include mixin.minitablet{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
     @include mixin.movil(){
         width: 100%;
         margin: 0;
@@ -48,6 +53,9 @@ $colorSecundario: black;
         @include mixin.tablet{
             width: 100%;            
         }  
+        @include mixin.minitablet{
+            width: 100%;
+        }
         @include mixin.movil(){
             width: 100%;
             margin: 0;

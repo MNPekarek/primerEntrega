@@ -22,6 +22,19 @@ $colorSecundario: black;
     "img__productos3 texto__button3"
     "texto__button4 img__productos4"
     ;
+    @include mixin.minitablet{
+        @include mixin.grid(1fr , 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr);
+        grid-template-areas:
+        "img__productos1"
+        "texto__button1"
+        "img__productos2"
+        "texto__button2"
+        "img__productos3"
+        "texto__button3"
+        "img__productos4"
+        "texto__button4"
+        ;        
+    }
     @include mixin.movil{
         @include mixin.grid(1fr , 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr);
         grid-template-areas:

@@ -9,6 +9,12 @@
     padding: 0;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .header {
+    margin: 0;
+    padding: 0;
+  }
+}
 .header .fondo__modificado {
   background-color: black;
   border-radius: 20px;
@@ -88,6 +94,14 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: "img__productos1 texto__button1" "texto__button2 img__productos2" "img__productos3 texto__button3" "texto__button4 img__productos4";
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .section__productos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "img__productos1" "texto__button1" "img__productos2" "texto__button2" "img__productos3" "texto__button3" "img__productos4" "texto__button4";
+  }
 }
 @media screen and (max-width: 480px) {
   .section__productos {
@@ -267,6 +281,11 @@
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .section__consejos .video__texto__consejos {
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 480px) {
   .section__consejos .video__texto__consejos {
     flex-direction: column;
@@ -275,6 +294,11 @@
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .section__consejos .video__texto__consejos iframe {
     width: 40%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .section__consejos .video__texto__consejos iframe {
+    width: 100%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -291,6 +315,11 @@
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .section__consejos .video__texto__consejos p {
     width: 50%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .section__consejos .video__texto__consejos p {
+    width: 90%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -396,6 +425,11 @@
     width: 100vw;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .footer {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 480px) {
   .footer {
     flex-direction: column;
@@ -456,6 +490,13 @@
     padding: 0;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
 @media screen and (max-width: 480px) {
   .container {
     width: 100%;
@@ -471,6 +512,11 @@
   overflow: auto;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .container .main {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .container .main {
     width: 100%;
   }

@@ -16,6 +16,9 @@ $colorSecundario: black;
     @include mixin.tablet{
         width: 100vw; 
     } 
+    @include mixin.minitablet{
+        width: 100%;
+    }
     @include mixin.movil{
         flex-direction: column;
     }
