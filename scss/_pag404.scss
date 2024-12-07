@@ -1,8 +1,21 @@
-.pag404{
-    div{
+.pag404 {
+    div {
         text-align: center;
-        img{
-           height: 100vh;
+
+        img {
+            height: 100vh;
+
+            @include mixin.movil {
+                width: 100%;
+            }
+
+            @include mixin.minitablet {
+                width: 100%;
+            }
+
+            @include mixin.tablet {
+                width: 100%;
+            }
         }
     }
 }

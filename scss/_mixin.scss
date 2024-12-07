@@ -5,17 +5,17 @@ $colorSecundario: black;
     display: flex;
     justify-content: $justify;
     align-items: $align;
-    
+
 }
 
-@mixin grid($columns , $filas ){
+@mixin grid($columns , $filas ) {
     display: grid;
     grid-template-columns: $columns;
     grid-template-rows: $filas;
-    
+
 }
 
-@mixin titulos{
+@mixin titulos {
     text-align: center;
     font-size: 2rem;
     padding: 20px;
@@ -24,48 +24,52 @@ $colorSecundario: black;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-@mixin textoP{
+@mixin textoP {
     padding: 10px 30px;
     line-height: 2rem;
 }
 
-@mixin textoButton{
-    line-height: 2rem;    
-    height: 480px;          
+@mixin textoButton {
+    line-height: 2rem;
+    height: 480px;
 }
-@mixin textoProductos{
+
+@mixin textoProductos {
     padding: 20px;
     width: 80%;
 }
 
-@mixin productos{
+@mixin productos {
     width: 100%;
-    height: 480px;   
+    height: 480px;
     padding: 20px;
 }
-@mixin submit{
-    color: white;   
+
+@mixin submit {
+    color: white;
     border: none;
     background-color: #39b139;
     border-radius: 20px;
     padding: 10px;
 }
-@mixin colores{
+
+@mixin colores {
     color: $colorPrincipal;
     text-decoration: none;
 }
 
-@mixin coloresHover{
+@mixin coloresHover {
     padding: 5px;
     border-radius: 20px;
     color: $colorSecundario;
     background-color: $colorPrincipal;
 }
 
-@mixin fadeIn($duracion : 1s, $distancia: 20px){
+@mixin fadeIn($duracion : 1s, $distancia: 20px) {
     opacity: 0;
     transform: translateY($distancia);
     animation: fadeIn $duracion forwards;
+
     @keyframes fadeIn {
         to {
             opacity: 1;
@@ -76,37 +80,43 @@ $colorSecundario: black;
 
 @mixin hover-scale($scale: 1.1, $duracion: 0.3s) {
     transition: transform $duracion ease-in-out;
+
     &:hover {
-      transform: scale($scale);
-    }
-  }
-
-  @mixin pulse($duracion: 1.5s) {
-    animation: pulse $duracion infinite;
-  
-    @keyframes pulse {
-      0%, 100% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.1);
-      }
-    }
-  }
-
-@mixin tablet(){
-    @media screen and (min-width: 768px) and (max-width: 991px) {
-        @content;        
+        transform: scale($scale);
     }
 }
-@mixin minitablet(){
+
+@mixin pulse($duracion: 1.5s) {
+    animation: pulse $duracion infinite;
+
+    @keyframes pulse {
+
+        0%,
+        100% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.1);
+        }
+    }
+}
+
+@mixin tablet() {
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin minitablet() {
     @media screen and (min-width: 481px) and (max-width: 767px) {
         @content;
     }
 }
-@mixin movil(){
+
+@mixin movil() {
     @media screen and (max-width: 480px) {
         @content;
     }
-    
+
 }

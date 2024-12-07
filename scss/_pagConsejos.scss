@@ -1,59 +1,84 @@
-@use "mixin";
 
 $colorPrincipal: #c0c0c0;
 $colorSecundario: black;
 
-.section__consejos{
-    h1{padding: 10px}
-    h2{@include mixin.titulos();}
-    @include mixin.tablet{
+.section__consejos {
+    h1 {
+        padding: 10px
+    }
+
+    h2 {
+        @include mixin.titulos();
+    }
+
+    @include mixin.tablet {
         width: 90vw;
     }
-    .video__texto__consejos{
+
+    .video__texto__consejos {
         @include mixin.flex(center, center);
-        @include mixin.minitablet{
+
+        @include mixin.minitablet {
             flex-direction: column;
         }
-        @include mixin.movil{
+
+        @include mixin.movil {
             flex-direction: column;
         }
-        iframe{
-            @include mixin.tablet{
+
+        iframe {
+            @include mixin.tablet {
                 width: 40%;
             }
-            @include mixin.minitablet{
+
+            @include mixin.minitablet {
                 width: 100%;
             }
-            @include mixin.movil{
+
+            @include mixin.movil {
                 width: 100%;
             }
         }
-        p{
+
+        p {
             @include mixin.textoP();
             width: 40%;
             margin-left: 50px;
-            @include mixin.tablet{
+
+            @include mixin.tablet {
                 width: 50%;
             }
-            @include mixin.minitablet{
+
+            @include mixin.minitablet {
                 width: 90%;
             }
-            @include mixin.movil{
+
+            @include mixin.movil {
                 width: 90%;
             }
         }
     }
 }
-.section__recomendaciones{    
-    .h2-background{@include mixin.titulos();}
-    @include mixin.tablet{
+
+.section__recomendaciones {
+    .h2-background {
+        @include mixin.titulos();
+    }
+
+    @include mixin.tablet {
         width: 90vw;
     }
-    .div__recomendaciones{
-        ul{
-            li{
-                h4{font-weight: bold}
-                p{@include mixin.textoP();}
+
+    .div__recomendaciones {
+        ul {
+            li {
+                h4 {
+                    font-weight: bold
+                }
+
+                p {
+                    @include mixin.textoP();
+                }
             }
         }
     }
