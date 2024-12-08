@@ -2,7 +2,7 @@
 <h3 align="center">A passionate frontend developer from Argentina</h3>
 
 <h3 align="left">Connect with me:</h3>
-<p align="left">
+<p align="left">Estoy desarrollando mi primer multi pagina para un trabajo final en Coderhouse, con mis habilidades recientemente aprendidas.
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
